@@ -1,0 +1,15 @@
+de/markant/lksg/application/task/repository/TransactionRepository.class
+de/markant/lksg/application/task/repository/AccountRepository.class
+de/markant/lksg/application/task/dto/TransferDto.class
+de/markant/lksg/application/task/model/Account$AccountBuilder.class
+de/markant/lksg/application/task/service/AccountService.class
+de/markant/lksg/application/task/model/Transaction$TransactionBuilder.class
+de/markant/lksg/application/task/model/TransactionType.class
+de/markant/lksg/application/task/dto/AccountDto.class
+de/markant/lksg/application/task/exception/ResourceNotFoundException.class
+de/markant/lksg/application/task/exception/GlobalExceptionHandler.class
+de/markant/lksg/application/task/service/TransactionService.class
+de/markant/lksg/application/task/model/Transaction.class
+de/markant/lksg/application/task/controller/AccountService.class
+de/markant/lksg/application/task/model/Account.class
+de/markant/lksg/application/task/BankingApplication.class
