@@ -1,0 +1,45 @@
+# Spring Boot Backend for Mini Bank Application
+
+## Overview
+
+This is a Spring Boot application that serves as the backend for a banking system. It connects to a MySQL database and provides RESTful APIs for the frontend application.
+
+## Requirements
+
+- Java 17 or later
+- Maven 3.6 or later
+- MySQL 8.0 or later
+
+## Setup Instructions
+
+1. Clone the Repository: Fetch the backend folder structure and download it to your local machine which I have shared via email.
+
+2. Install MySQL server and make it up and running.
+   
+   For Ubuntu
+   a)
+   sudo apt update
+   sudo apt install mysql-server
+
+   b)
+   sudo mysql_secure_installation
+
+   c) 
+   sudo systemctl start mysql
+
+   For Windows:
+   Download the MySQL installer from the official MySQL website (https://dev.mysql.com/downloads/installer/).
+  
+   d) Configure MySQL: Create a database named bank_db in MySQL. You can do this using a MySQL client or command line:
+  
+   CREATE DATABASE bank_db;
+
+3. Build the Application: Open command prompt and navigate to the folder containing pom.xml file. Then use Maven to build the application and resolve dependencies.
+  
+   mvn clean package -DskipTests
+
+4. Run the Application: Start the Spring Boot application:
+
+   mvn spring-boot:run
+
+   Upon start it accessed on : http://localhost:8080/api/. This API is used by the frontend component of this project.  

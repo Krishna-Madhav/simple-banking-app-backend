@@ -7,18 +7,31 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * The TransactionService handles transaction operations like fetching all transactions
+ * and fetching transaction for specific account.
+ * It interacts with the TransactionRepository for data access.
+ */
 @Service
 public class TransactionService {
 
     @Autowired
     private TransactionRepository transactionRepository;
 
-    // Get all transactions
+    /**
+     * Retrieves all transactions.
+     * @return List of all Transaction entities.
+     */
     public List<Transaction> getAllTransactions(){
         return transactionRepository.findAll();
     }
 
-    // Get all transactions for a specific account by accountNumber
+    /**
+     * Fetches all transactions for a specific account identified by its account number.
+     * @param accountNumber The account number for which to fetch transactions.
+     * @return List of Transaction entities associated with the specified account.
+     */
+
     public List<Transaction> getTransactionsByAccountNr(String accountNumber){
         return transactionRepository.findByAccount_AccountNr(accountNumber);
     }
